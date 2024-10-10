@@ -24,7 +24,6 @@ def admin_login():
         if authenticate(username, password):
             st.success("Login successful!")
             st.session_state['admin_authenticated'] = True
-            st.experimental_rerun()
         else:
             st.error("Invalid username or password. Please try again.")
 
