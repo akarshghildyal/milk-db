@@ -1,0 +1,9 @@
+streamlit
+pymongo
+bcrypt
+twilio
+python-dotenv
+pywhatkit
+streamlit-shadcn-ui
+pandas
+streamlit-date-picker
