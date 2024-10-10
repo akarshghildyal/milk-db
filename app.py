@@ -13,7 +13,7 @@ from database import get_monthly_data, add_milk_entry
 load_dotenv()
 
 # MongoDB conncection
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = os.environ.get("MONGO_URI")
 client = MongoClient(MONGO_URI)  # Update with MongoDB Atlas connection string when hosted
 db = client['MilkTracking']
 milk_entries_collection = db['milk_entries']

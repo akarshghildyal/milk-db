@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve admin credentials from environment variables
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME")
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME")
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
 
 # Function to authenticate admin login
 def authenticate(username, password):

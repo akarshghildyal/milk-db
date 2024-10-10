@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # MongoDB connection
-client = MongoClient(os.getenv("MONGO_URI"))
+client = MongoClient(os.environ.get("MONGO_URI"))
 db = client.MilkTracking
 milk_entries = db.milk_entries
 

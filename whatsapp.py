@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Twilio credentials from environment variables
-TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-TWILIO_WHATSAPP_NUMBER = os.getenv("TWILIO_WHATSAPP_NUMBER")
-MILKMAN_NUMBER = os.getenv("MILKMAN_NUMBER")
-FRIEND_NUMBER = os.getenv("FRIEND_NUMBER")
-MY_NUMBER = os.getenv("MY_NUMBER")
+TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
+TWILIO_WHATSAPP_NUMBER = os.environ.get("TWILIO_WHATSAPP_NUMBER")
+MILKMAN_NUMBER = os.environ.get("MILKMAN_NUMBER")
+FRIEND_NUMBER = os.environ.get("FRIEND_NUMBER")
+MY_NUMBER = os.environ.get("MY_NUMBER")
 
 # Function to send a WhatsApp message using Twilio
 def send_whatsapp_message(quantity, date):
